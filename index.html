@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishnu Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="logo.JPG" />
+  </head>
+  <body>
+    <header id="header">
+      <h2>Bishnu Shrestha Portfolio</h2>
+      <nav>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <section id="about">
+        <img src="profile.jpg" id="profile" alt="profile" />
+        <div id="discript">
+          <h2>About Me</h2>
+          <!-- <img src="profile.jpg" id="profile2" alt="profile" /> -->
+
+          <p>
+            Hi, I’m Bishnu Shrestha, a passionate web developer with a strong
+            aspiration to become a full-stack developer and an excellent
+            front-end developer. I have recently completed my high schoole
+            education in science stream, and I am proficient in HTML, CSS,
+            JavaScript, and am in process of learning React.
+          </p>
+
+          <p>
+            Throughout my journey, I have created various projects, such as one
+            piece website, book store website, which have helped me hone my
+            skills and learn new technologies. I am creative, diligent, and
+            always open to learning new things and gaining new experiences.
+          </p>
+
+          <p>
+            I have had the opportunity to collaborate with diverse teams and
+            individuals, which has enriched my understanding of teamwork and
+            communication. My goal is to continue learning and growing in my
+            career, and I am excited about the opportunities ahead.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Simple Pizza ordering form:</h3>
+          <p>
+            This form is responsive and there is use of proper form validation
+            using JavaScript and response on succesfull order placement. you
+            cant submit the form unless there is proper input and the payment
+            method is selected. This was made for mobile and desktop both.
+          </p>
+          <div class="pic">
+            <img src="order pizza.JPG" alt="pizza order form" width="60%" />
+          </div>
+        </div>
+        <div class="project">
+          <h3>One Piece site:</h3>
+          <p>
+            I being a One Piece fan have created a website that has the origin
+            of the manga and anime seried in the first part and in the second
+            part there is the profile card of each of the straw hat pirats. This
+            website contains some basic CSS animations as well. I learned most
+            of my CSS from doing this project.
+          </p>
+          <div class="pic">
+            <img src="onepiece.JPG" width="100%" />
+            <br />
+            <br />
+            <img src="onepiece2.JPG" width="100%" />
+          </div>
+        </div>
+        <div class="project">
+          <h3>Simple To Do List App:</h3>
+          <p>
+            This is a React application which I have made recently. In the app
+            you can add as many tasks as you want. Therre are options to delete
+            or edit the task you added. The app is complete with it being able
+            to store temoprary data in brouser local storage. You can also mark
+            the task as done.
+          </p>
+          <div class="pic"><img src="todo.JPG" width="60%" /></div>
+        </div>
+      </section>
+      <hr />
+      <section class="connect">
+        <div id="contact">
+          <h2>Contact</h2>
+          <p>
+            Feel free to contact me for any future colaborations. <br />Email:
+            <a href="mailto:bishnu011shrestha@gmail.com"
+              >bishnu011shrestha@gmail.com</a
+            ><br />
+            Mobile: 9813567029
+          </p>
+        </div>
+        <div id="socials">
+          <a
+            href="https://www.facebook.com/profile.php?id=100056020477477"
+            class="fa fa-facebook"
+          ></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="https://github.com/Bishnu-Shrestha" class="fa fa-github"></a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="date"></span> Bishnu Shrestha Portfolio.</p>
+    </footer>
+  </body>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("date").textContent = currentYear;
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("header");
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.style.top = "-60px";
+      } else {
+        // Scrolling up
+        navbar.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</html>

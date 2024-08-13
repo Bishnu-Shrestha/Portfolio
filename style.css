@@ -1,0 +1,163 @@
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  /* #profile {
+    display: none;
+  } */
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #discript {
+    width: 30%;
+  }
+  #profile {
+    display: block;
+    height: 350px;
+    width: 350px;
+  }
+  .connect {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+  }
+  section {
+    padding: 20px;
+    margin: 30px;
+  }
+  #contact,
+  #socials {
+    margin-bottom: 0px;
+  }
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #b7c6e9;
+}
+
+.content {
+  margin: 2% 1%;
+}
+#header {
+  position: fixed;
+  top: 0px;
+  transition: top 0.3s;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  /* padding: 15px; */
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+nav ul li {
+  height: 100%;
+  padding: 25px;
+  float: left;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+nav ul li:hover {
+  text-decoration: dotted underline 5px;
+  background-color: #545c5f;
+}
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#profile {
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+  /* width: 400px; */
+}
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#discript {
+  background-color: #ffffffd3;
+  width: 60%;
+  text-align: justify;
+  padding: 40px;
+  border-radius: 40px;
+  font-size: 18px;
+  box-shadow: 15px 15px 035px black;
+  margin-left: 60px;
+}
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+  margin: 5% 8% 5% 8%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+#contact,
+#socials {
+  background-color: #ffffffc7;
+  width: 500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.connect {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+#socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#socials .fa {
+  padding: 25px;
+  font-size: 40px;
+  width: 40px;
+  text-decoration: none;
+  /* border-radius: 50%; */
+  color: black;
+}
