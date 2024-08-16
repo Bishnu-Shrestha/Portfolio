@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: Arial, sans-serif;
@@ -15,17 +20,15 @@ body {
   width: 100%;
   background-color: #000000;
   color: #fff;
-  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
 p {
   font-size: 15px;
 }
-nav {
-  margin-left: 5px;
-}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -59,15 +62,15 @@ nav ul li:hover {
   flex-direction: column;
 }
 #profile {
-  background-size: contain;
+  /* background-size: contain; */
   border-radius: 25%;
-  width: 40%;
+  width: 850px;
   margin: 10px;
 }
 #profile img {
   width: 100%;
   display: block;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   height: fit-content;
 }
 #about {
@@ -75,19 +78,18 @@ nav ul li:hover {
   flex-direction: row;
   align-items: center;
   background-color: #ffffffd3;
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: 18px;
-  margin-top: 90px;
   margin-bottom: 50px;
-  box-shadow: 15px 15px 35px black;
+  box-shadow: 5px 5px 10px rgb(78, 78, 78);
 }
 hr {
   border: 1px solid white;
+  width: 100%;
 }
 #discript {
   text-align: justify;
   font-size: 18px;
-  width: 60%;
 }
 section {
   padding: 20px;
@@ -97,19 +99,23 @@ section {
 .project {
   background-color: rgba(255, 255, 255, 0.76);
   padding: 30px;
-  width: 100%;
+  width: fit-content;
   margin: 0 0 30px 0;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgb(107, 106, 106);
 }
 
 footer {
   background-color: #000000;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contact,
 #socials {
@@ -142,30 +148,31 @@ footer {
   }
   .content {
     width: 100%;
-    margin-top: 100px;
-    padding: 10px;
+    margin: 100px 0 0 0;
+    padding: 0px;
   }
   section {
     padding: 20px;
-    margin: 30px;
-    width: 500px;
+    margin: 10px 0 0 0;
   }
 
   #about {
     flex-direction: column;
-    margin-top: 0px;
+    padding: 30px;
   }
 
   #profile {
     height: 350px;
     width: 350px;
+    margin-bottom: 40px;
   }
   .connect {
     flex-direction: column;
+    align-items: center;
   }
 
   #contact {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     margin-bottom: 20px;
   }
 }
