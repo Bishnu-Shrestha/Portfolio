@@ -25,6 +25,9 @@ body {
   justify-content: space-around;
 }
 
+.content {
+  margin-top: 60px;
+}
 p {
   font-size: 15px;
 }
