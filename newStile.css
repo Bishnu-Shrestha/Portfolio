@@ -169,6 +169,7 @@ ul {
   text-align: center;
   background-color: rgb(134, 134, 250);
   padding: 10px 0;
+  height: 30px;
 }
 .fotter a {
   text-decoration: none;
@@ -194,6 +195,7 @@ ul {
   padding: 0;
   border: 2px solid red;
   float: left;
+  bottom: 20px;
 }
 
 /* Mobile Styles */
@@ -202,7 +204,7 @@ ul {
     width: 40px;
     padding: 5px;
     animation: none;
-    transform: translateX(-20px);
+    transform: translateX(-50px);
     transition: 0.6s;
   }
   .side-nav:hover {
@@ -235,6 +237,9 @@ ul {
   }
   .info {
     padding: 10px;
+  }
+  .info img {
+    width: 200px;
   }
   .info p {
     font-size: 14px;
