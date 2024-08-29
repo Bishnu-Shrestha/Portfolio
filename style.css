@@ -65,16 +65,14 @@ nav ul li:hover {
   flex-direction: column;
 }
 #profile {
-  /* background-size: contain; */
-  border-radius: 25%;
-  width: 850px;
-  margin: 10px;
-}
-#profile img {
-  width: 100%;
-  display: block;
-  /* margin-top: 15px; */
-  height: fit-content;
+  background-image: url("./images/profile.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15%;
+  width: 1050px;
+  height: 400px;
+  margin: 4%;
 }
 #about {
   display: flex;
@@ -93,6 +91,7 @@ hr {
 #discript {
   text-align: justify;
   font-size: 18px;
+  margin: 4%;
 }
 section {
   padding: 20px;
