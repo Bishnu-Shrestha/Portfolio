@@ -102,103 +102,7 @@
             Pirates are listed below with their details.
           </p>
           <br />
-          <div class="cards">
-            <!-- Corrected visible content in character cards -->
-            <div class="info">
-              <img
-                loading="lazy"
-                src="./images/luffy.webp"
-                alt="Captain Luffy"
-              />
-              <p>
-                Name: Monkey D. Luffy<br />
-                Alias: Strawhat Luffy<br />
-                Role: Captain<br />
-                Bounty: 1,500,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/zoro.webp" alt="Zoro" />
-              <p>
-                Name: Roronoa Zoro<br />
-                Alias: Pirate Hunter<br />
-                Role: Swordsman<br />
-                Bounty: 320,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/sanji.webp" alt="Sanji" />
-              <p>
-                Name: Vinsmoke Sanji<br />
-                Alias: Black Leg<br />
-                Role: Chef<br />
-                Bounty: 330,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/nami.webp" alt="Nami" />
-              <p>
-                Name: Nami<br />
-                Alias: Cat Burglar<br />
-                Role: Navigator<br />
-                Bounty: 66,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/robin.webp" alt="Robin" />
-              <p>
-                Name: Nico Robin<br />
-                Alias: Ms. All-Sunday<br />
-                Role: Archaeologist<br />
-                Bounty: 130,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/chomper.webp" alt="Chopper" />
-              <p>
-                Name: Tony Tony Chopper<br />
-                Alias: Cotton Candy Lover<br />
-                Role: Doctor<br />
-                Bounty: 100<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/frankey.webp" alt="Franky" />
-              <p>
-                Name: Cutty Flam<br />
-                Alias: Cyborg Franky<br />
-                Role: Shipwright<br />
-                Bounty: 94,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/brook.webp" alt="Brook" />
-              <p>
-                Name: Brook<br />
-                Alias: Humming Swordsman<br />
-                Role: Musician<br />
-                Bounty: 83,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/Jimbei.webp" alt="Jimbei" />
-              <p>
-                Name: Jimbei<br />
-                Alias: First Son of the Sea Jimbei<br />
-                Role: Helmsman<br />
-                Bounty: 438,000,000<br />
-              </p>
-            </div>
-            <div class="info">
-              <img loading="lazy" src="./images/usop.webp" alt="Usopp" />
-              <p>
-                Name: Usopp<br />
-                Alias: God Usopp<br />
-                Role: Sniper<br />
-                Bounty: 200,000,000<br />
-              </p>
-            </div>
-          </div>
+          <div class="cards"></div>
         </div>
       </div>
     </div>
@@ -212,13 +116,6 @@
       <a href="mailto:bishnu011@gmail.com" title="E-Mail me">Bishnu Shrestha</a
       >.&copy;<span id="date"></span>
     </div>
-    <script>
-      const currentYear = new Date().getFullYear();
-      document.getElementById("date").textContent = currentYear;
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
   </body>
+  <script src="cardsObj.js"></script>
 </html>
