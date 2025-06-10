@@ -8,6 +8,7 @@ html {
 }
 body {
   font-family: Arial, sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   background-color: #b7c6e9;
@@ -17,12 +18,13 @@ body {
   position: fixed;
   top: 0px;
   transition: top 0.3s;
-  width: 100%;
+  width: 100dvw;
+  height: 70px;
   background-color: #000000;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   z-index: 1;
 }
 .content {
@@ -33,6 +35,10 @@ p {
   text-align: justify;
 }
 
+nav {
+  position: fixed;
+  right: 5vw;
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -44,7 +50,7 @@ nav ul {
 
 nav ul li {
   height: auto;
-  padding: 25px;
+  padding: 20px;
   float: left;
 }
 
@@ -74,19 +80,37 @@ img:hover {
   transform: scale(1.05);
   box-shadow: 5px 10px 15px #000000;
 }
-#profile {
+
+#profile,
+#logo {
   background-image: url("./images/profilefull.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1050px;
+}
+#profile {
+  width: 400px;
   height: 400px;
   margin: 4%;
+  flex: 1;
 }
-#about {
+#logo {
+  position: fixed;
+  background-image: url("./images/logo.png");
+  height: 60px;
+  width: 60px;
+  left: 5vw;
+}
+#titles {
+  position: fixed;
+  left: 15vw;
+}
+#about_me {
   display: flex;
+  overflow: hidden;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #ffffffd3;
   border-radius: 10px;
   font-size: 18px;
@@ -101,6 +125,7 @@ hr {
   text-align: justify;
   font-size: 18px;
   margin: 4%;
+  flex: 2;
 }
 section {
   padding: 20px;
@@ -121,9 +146,9 @@ footer {
   color: #fff;
   /* text-align: center; */
   position: fixed;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
-  height: 40px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +156,7 @@ footer {
 #contact,
 #socials {
   background-color: #ffffffc7;
+  box-shadow: 5px 5px 10px rgb(107, 106, 106);
   width: fit-content;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -144,18 +170,62 @@ footer {
   margin-bottom: 20px;
 }
 #links {
-  display: flex;
-  align-items: center;
   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
+  gap: 50px;
 }
+
 #socials .fa-brands {
-  padding: 25px;
+  /* padding: 25px; */
   font-size: 25px;
   text-decoration: none;
   color: black;
 }
-@media only screen and (max-width: 800px) {
-  header h2 {
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  #logo {
+    display: none;
+  }
+  #titles {
+    left: 2vw;
+  }
+  nav {
+    right: 0;
+  }
+  #about_me {
+    flex-direction: column;
+  }
+  #profile {
+    width: 450px;
+    height: 450px;
+    flex: none;
+  }
+  #discript {
+    flex: none;
+  }
+  section {
+    margin: 0 10% 0 10%;
+  }
+  .connect {
+    flex-direction: column;
+  }
+  #links {
+    grid-template-columns: repeat(5, 25px);
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  nav {
+    position: static;
+    margin: auto;
+  }
+  nav ul li {
+    padding: 18px;
+  }
+  #titles,
+  #logo {
     display: none;
   }
   .content {
@@ -168,7 +238,7 @@ footer {
     margin: 10px 0 0 0;
   }
 
-  #about {
+  #about_me {
     flex-direction: column;
     padding: 30px;
   }
@@ -177,6 +247,11 @@ footer {
     height: 350px;
     width: 350px;
     margin-bottom: 40px;
+    flex: none;
+  }
+
+  #discript {
+    flex: none;
   }
   .connect {
     flex-direction: column;
@@ -184,7 +259,10 @@ footer {
   }
 
   #contact {
-    /* margin-bottom: 0px; */
     margin-bottom: 20px;
+  }
+  #contact,
+  #socials {
+    width: 80%;
   }
 }

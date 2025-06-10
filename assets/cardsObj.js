@@ -5,7 +5,7 @@ const characters = [
     alias: "Strawhat Luffy",
     role: "Captain",
     bounty: "1,500,000,000",
-    image: "./images/luffy.webp",
+    image: "../images/luffy.webp",
     alt: "Captain Luffy ",
   },
   {
@@ -13,7 +13,7 @@ const characters = [
     alias: "Piarat Hunter",
     role: "Swordsman",
     bounty: "320,000,000",
-    image: "./images/zoro.webp",
+    image: "../images/zoro.webp",
     alt: "Zoro",
   },
   {
@@ -21,7 +21,7 @@ const characters = [
     alias: "Black Legs",
     role: "Chef",
     bounty: "330,000,000",
-    image: "./images/sanji.webp",
+    image: "../images/sanji.webp",
     alt: "Sanji",
   },
   {
@@ -29,7 +29,7 @@ const characters = [
     alias: "Cat Burgler",
     role: "Navigator",
     bounty: "66,000,000",
-    image: "./images/nami.webp",
+    image: "../images/nami.webp",
     alt: "Nami",
   },
   {
@@ -37,7 +37,7 @@ const characters = [
     alias: "Ms All-Sunday",
     role: "Arceologist",
     bounty: "130,000,000",
-    image: "./images/robin.webp",
+    image: "../images/robin.webp",
     alt: "Robin",
   },
   {
@@ -45,7 +45,7 @@ const characters = [
     alias: "Cotton candy lover",
     role: "Doctor",
     bounty: "100",
-    image: "./images/chomper.webp",
+    image: "../images/chomper.webp",
     alt: "Chomper",
   },
   {
@@ -53,7 +53,7 @@ const characters = [
     alias: "Ciborg franky",
     role: "Ship wright",
     bounty: "94,000,000",
-    image: "./images/frankey.webp",
+    image: "../images/frankey.webp",
     alt: "Franky",
   },
   {
@@ -61,7 +61,7 @@ const characters = [
     alias: "The Humming Swordsman",
     role: "Mugician",
     bounty: "83,000,000",
-    image: "./images/brook.webp",
+    image: "../images/brook.webp",
     alt: "Brook",
   },
   {
@@ -69,7 +69,7 @@ const characters = [
     alias: "First Sun of the Sea ",
     role: "Helmsman",
     bounty: "430,000,000",
-    image: "./images/jimbei.webp",
+    image: "../images/jimbei.webp",
     alt: "Jimbey",
   },
   {
@@ -77,11 +77,10 @@ const characters = [
     alias: "God Usop",
     role: "Snipper",
     bounty: "200,000,000",
-    image: "./images/usop.webp",
+    image: "../images/usop.webp",
     alt: "Usopp",
   },
 ];
-
 
 //for the preloder
 const currentYear = new Date().getFullYear();
@@ -90,8 +89,6 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
 });
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".cards");

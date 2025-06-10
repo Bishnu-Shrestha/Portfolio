@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bishnu Portfolio</title>
-    <link rel="icon" href="./images/logo.svg" />
+    <meta
+      name="description"
+      content="Passionate Web developer portfolio projects games web designing Bishnu shrestha portfolio "
+    />
+    <title>Bishnu Shrestha |Web developer Portfolio</title>
+    <link rel="icon" href="./images/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,7 +17,13 @@
   </head>
   <body>
     <header id="header">
-      <h2>Bishnu Shrestha Portfolio</h2>
+      <div id="logo"></div>
+      <div id="titles">
+        <h2>Bishnu Shrestha Portfolio</h2>
+        <h5 style="color: rgb(182, 202, 199)">
+          Web Developer | Interests: Computers, Tech, Linux...
+        </h5>
+      </div>
       <nav>
         <ul>
           <li><a href="#about">About me</a></li>
@@ -24,12 +34,11 @@
     </header>
     <div class="content">
       <section>
-        <div id="about">
-          <div id="profile">
-            <!-- <img src="./images/profile.webp" alt="profile" /> -->
-          </div>
+        <div id="about_me">
+          <div id="profile"></div>
           <div id="discript">
             <h2>About Me</h2>
+            <br />
             <p>
               Hi, I’m Bishnu Shrestha, a passionate web developer based in Nepal
               with a strong aspiration to become a full-stack developer and an
@@ -77,7 +86,7 @@
             <a href="http://bishnu-shrestha.github.io/Astroid_Dodge/">
               <img
                 src="./images/gameSS-01.png"
-                alt="screenshot of spsceship in space dozing asteroids"
+                alt="screenshot of spaceship in space dozing asteroids"
                 width="100%"
               />
             </a>
@@ -105,7 +114,7 @@
             <a href="http://Benimaru-Zenitsu.github.io/To-Do-App">
               <img
                 src="./images/todo.webp"
-                alt="screenshot of to do app"
+                alt="screenshot of to do app with frosted glass theme."
                 width="50%"
               />
             </a>
@@ -131,10 +140,10 @@
           </p>
           <br />
           <div class="pic">
-            <a href="OnePiece.html">
+            <a href="./assets/OnePiece.html">
               <img
                 src="./images/onepiece.webp"
-                alt="screenshot of onepiece anime website "
+                alt="screenshot of one piece anime website showing skillfully crafted cards for all the characters."
                 width="100%"
               />
             </a>
@@ -161,7 +170,7 @@
             <a href="#">
               <img
                 src="./images/order pizza.webp"
-                alt="pizza order form"
+                alt="pizza order form for mobile."
                 width="50%"
               />
             </a>
@@ -181,10 +190,13 @@
             <a href="mailto:bishnu011shrestha@gmail.com"
               >bishnu011shrestha@gmail.com</a
             ><br />
+            Find My CV:
+            <a href="./assets/BSCV.pdf"> Here</a>
           </p>
         </div>
         <div id="socials">
           <h2>Find me at:</h2>
+          <br />
           <div id="links">
             <a
               href="https://www.facebook.com/profile.php?id=100056020477477"
@@ -206,13 +218,18 @@
               href="https://github.com/Bishnu-Shrestha"
               class="fa-brands fa-github"
             ></a>
+            <br />
           </div>
         </div>
       </section>
     </div>
 
     <footer>
-      <p>&copy; <span id="date"></span> Bishnu Shrestha Portfolio.</p>
+      <p>
+        Bishnu Shrestha &copy;
+        <span id="date"></span>
+        Portfolio.
+      </p>
     </footer>
   </body>
   <script>
