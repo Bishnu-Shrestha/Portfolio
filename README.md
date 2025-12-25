@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository! This website showcases my journey as a web developer and the projects I've built along the way.
 
 ## 🚀 Live Website
-Visit my portfolio: **[bishnushrestha101.com.np](https://bishnushrestha101.com.np)**
+Visit my portfolio by **[clicking here](https://bishnushrestha101.com.np)**
 
 ## 👨‍💻 About Me
 Hi! I'm Bishnu Shrestha, a passionate web developer from Nepal with aspirations to become a full-stack developer. I recently completed my high school education in the science stream and am continuously learning new technologies to enhance my skills.
@@ -58,8 +58,8 @@ Hi! I'm Bishnu Shrestha, a passionate web developer from Nepal with aspirations 
 I'm always open to collaboration and learning opportunities!
 
 - **Email**: [Contact Me](mailto:bishnu011shrestha@gmial.com)
-- **Portfolio**: [bishnushrestha101.com.np](https://bishnushrestha101.com.np)
-- **CV**: [Download my CV](https://drive.google.com/file/d/1MPerIfmtFuEuS0dYEfo8KBWRamkBjeF-/view?usp=drive_link)
+- **Visit**: [my_portfolio](https://bishnushrestha101.com.np)
+- **Checkout**: [my CV](https://drive.google.com/file/d/1MPerIfmtFuEuS0dYEfo8KBWRamkBjeF-/view?usp=drive_link)
 ## 📝 License
 © 2025 Bishnu Shrestha. All rights reserved. 
 This code is for portfolio demonstration purposes only. 
